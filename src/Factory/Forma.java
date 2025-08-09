@@ -1,7 +1,10 @@
- 
- 
-public interface  Forma {
-    Void Dibujar ();
-    
+ package Factory;
 
+/**
+ * 
+ */
+public interface Forma {
+    void Dibujar();
+    
 }
+

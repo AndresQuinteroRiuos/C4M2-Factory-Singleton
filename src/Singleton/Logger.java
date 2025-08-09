@@ -1,23 +1,18 @@
-public class Logger {
+package Singleton;
 
-    private static Logger Instancia;
+public enum Logger {
+    INSTANCE;
 
-    private Logger (    ){}
-
-    public static Logger getInstancia() {
-       if ( Instancia == null){
-        Instancia=new Logger();
-         }
-        return Instancia;
+    public static Logger getInstance() {
+        return INSTANCE;
     }
 
-    Public void Log(String Mensaje){
+    // Alias en español para compatibilidad con el código solicitado
+    public static Logger getInstancia() {
+        return INSTANCE;
+    }
 
- 
-    System.out.println("[LOG]: " + Mensaje);
-
+    public void log(String message) {
+        System.out.println("[LOG]: " + message);
+    }
 }
-    
-}
-
-
